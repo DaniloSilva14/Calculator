@@ -27,3 +27,57 @@ body {
 .title {
   text-align: center;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.calculadora {
+  border: solid 1px black;
+}
+
+.textView {
+  width: 260px;
+  height: 50px;
+  margin: 3px;
+  border-width: 5px;
+  font-size: 35px;
+  text-align: right;
+  border-style: solid;
+  border-color: #710983;
+  background-color: #c33fda;
+  color: white;
+  cursor: pointer;
+}
+
+.table {
+  background: lightgray;
+  margin: 3px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #c941e0;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: blue;
+}
+
+.biggerW {
+  width: 102px;
+}
+
+.biggerH {
+  height: 102px;
+}
+
+.expr {
+  background-color: purple;
+}

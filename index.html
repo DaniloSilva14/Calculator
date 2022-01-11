@@ -5,12 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="style.css">
   <title>Calculator</title>
 </head>
@@ -20,9 +14,45 @@
     <div class="box">
       <h1 class="title" id="title">Calculator</h1>
 
+      <div class="content">
+        <div class="calculadora">
+          <form name="form">
+            <input class="textView" name="textView" readonly>
+          </form>
+          <table class="table">
+            <tr>
+              <td><input class="btn" type="button" value="7" onclick="showInTextView(7)"></td>
+              <td><input class="btn" type="button" value="8" onclick="showInTextView(8)"></td>
+              <td><input class="btn" type="button" value="9" onclick="showInTextView(9)"></td>
+              <td><input class="btn" type="button" value="+" onclick="showInTextView('+')"></td>
+              <td><input class="btn" type="button" value="C" onclick="clearTextView()"></td>
+            </tr>
+            <tr>
+              <td><input class="btn" type="button" value="4" onclick="showInTextView(4)"></td>
+              <td><input class="btn" type="button" value="5" onclick="showInTextView(5)"></td>
+              <td><input class="btn" type="button" value="6" onclick="showInTextView(6)"></td>
+              <td><input class="btn" type="button" value="-" onclick="showInTextView('-')"></td>
+              <td><input class="btn" type="button" value="CE" onclick="backTextView()"></td>
+            </tr>
+            <tr>
+              <td><input class="btn" type="button" value="1" onclick="showInTextView(1)"></td>
+              <td><input class="btn" type="button" value="2" onclick="showInTextView(2)"></td>
+              <td><input class="btn" type="button" value="3" onclick="showInTextView(3)"></td>
+              <td><input class="btn" type="button" value="*" onclick="showInTextView('*')"></td>
+              <th rowspan="2"><input class="btn biggerH expr" type="button" value="=" onclick="calculate()"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input class="btn biggerW" type="button" value="0" onclick="showInTextView(0)"></td>
+              <td><input class="btn" type="button" value="." onclick="showInTextView('.')"></td>
+              <td><input class="btn" type="button" value="/" onclick="showInTextView('/')"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
